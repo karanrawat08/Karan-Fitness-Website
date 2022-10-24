@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url("gym2.jpg");
+            background-size:cover;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        
+        .left{
+            position: absolute;
+            top:13px;
+            margin-left: 13px;
+            /* border:2px solid blue; */
+        }
+        .mid{
+            text-align: center;
+            display: inline-block;
+            margin-left: 155px;
+
+margin-top: -29px;
+        }
+        .right{
+            position: absolute;
+            right:23px;
+            top: 13px;
+            /* border:2px solid blue; */
+     }
+        .left img{
+            width:8vw;
+            margin-top: 13px;
+            margin-left: 18px;
+            filter: invert(100%);
+        }
+        .left h3{
+            text-align: center;
+            font-size: 24px;
+            margin-top: 0px; 
+            margin-left: 14px;
+            background-color:black;
+            color: white;
+        }
+        .mid ul li{
+            display: inline-block;
+            color:white;
+            background-color:black;
+            font-size: 25px;
+          /* padding:24px 13px; */
+          cursor: pointer;
+          padding: 22px;
+        }
+        .mid ul{
+            padding-right: 14px;
+        }
+        .mid ul li:hover{
+            color:rgb(88, 83, 83);
+            text-decoration: underline;
+            transform: scale(1.15);
+        }
+        .right .btn{
+            display: inline-block;
+           
+            
+        }
+        .right .btn:hover{
+            transform:scale(1.15);      
+        }
+        .right .btn .b1{
+            background-color:black;
+            color:white;
+            border-radius: 7px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: large;
+            font-weight: 400;
+            
+    
+        }
+        .right .btn .b2{
+            background-color:black;
+            color:white;
+            border-radius: 7px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: large;
+            font-weight: 400;
+    }
+    .form{
+        height: 70vh;
+  margin-top: 130px;
+  margin-left: 54px;
+  width: 35vw;
+border:4px solid white;
+border-radius: 20px;
+border-style: dashed;
+}
+.form p{
+    
+    color:white;
+    text-align: center;
+    font-size:35px;
+    font-weight:350;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration:underline;
+}
+.p1{
+display:grid;
+margin-left:100px;
+}
+.p1 input{
+text-align: center;
+}
+.p1 .pr1 input{
+    width: 21vw;
+height: 5vh;
+border-radius: 10px;
+}
+.circle {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+  border-radius: 50%;
+  position:absolute;
+  right: 34px;
+}
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">
+        <img src="data:image/png;base64,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">
+        <h3><u><b>Karan Fitness</b></u></h3>
+        </div>
+        <div class="mid">
+        <ul>
+            <li>Home</li>
+            <li>Contact</li>
+            <li>About Us</li>
+            <li>Fitness Calculator</li>
+        </ul>
+        </div>
+        <div class="right">
+         <div class="btn"><button class="b1"  > Call Us Now</button></div>
+         <div class="btn"><button class="b2"  >Email us </button></div>
+        </div>
+    </header>
+    <div class="form">
+        <p ><b><i>Join the best gym near you</i></b></p>
+        <div class="p1">
+       <pre class="pr1"  ><input type="text"   placeholder="Enter your Name"></pre> 
+       <pre class="pr1" ><input type="text"  placeholder="Enter your Age"></pre>
+       <pre class="pr1" ><input type="text"  placeholder="Enter your Gender"></pre>
+       <pre class="pr1" ><input type="text"  placeholder="Enter your Locality"></pre>
+       <pre class="pr1" ><input type="text"  placeholder="Enter your Mobile No."></pre>
+       <pre class="pr1" ><input type="text" style="background-color:black; color:white" placeholder="Submit"></pre>
+    </div>
+    <div class="circle"></div>
+    </div>
+</body>
+</html>
